@@ -16,11 +16,11 @@ public class Que2 {
 		}
 
 		char[] chars = s.toCharArray();
-		char a;
+		char temp;
 		for (int start = 0, end = s.length() - 1; start < end; start++, end--) {
-			a = chars[start];
+			temp = chars[start];
 			chars[start] = chars[end];
-			chars[end] = a;
+			chars[end] = temp;
 		}
 		return new String(chars);
 	}
